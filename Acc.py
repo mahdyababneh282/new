@@ -119,7 +119,7 @@ if 'userId' in login.text:
 	coockie = f"sessionid={coo['sessionid']};ds_user_id={coo['ds_user_id']};csrftoken={coo['csrftoken']};"
 else:
     print('خطأ بالتسجيل')
-ids1 = ['mahdy'] 
+ids1 = ['mkhalad0','tft_mahdy','gdo1_0','4t_ig','himatools1','malek_ababneh3'] 
 for user in ids1:
     urll = (f'https://www.instagram.com/{user}/?__a=1')
     head2 = {
